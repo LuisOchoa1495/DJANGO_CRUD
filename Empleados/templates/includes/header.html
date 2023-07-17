@@ -1,0 +1,22 @@
+{% load static %}
+<div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li>
+        <img class="logo-inmobiliaria" src="{% static 'img/equipo.png' %}">
+        </li>
+        <li class="menu-text" href="#"> Gestion de empleados </li>
+        <li>
+          <a href="{% url 'personas_app:empleados_all' %}">Listar</a>
+        </li>
+        <li><a href="{% url 'departamentos_app:departamento_list' %}">Departamentos</a></li>
+        <li><a href="{% url 'personas_app:empleados_admin' %}">Administrar</a></li>
+        <li><a href="{% url 'departamentos_app:nuevo_departamento' %}">Nuevo Departamento</a></li> 
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><a href="{% url 'personas_app:empleado_add' %}" class="button">Nuevo Empleado</a></li>
+      </ul>
+    </div>
+  </div>

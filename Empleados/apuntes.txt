@@ -1,0 +1,11 @@
+1- crear entorno virtual
+2- descargar django
+3-librerias de postgre 
+pip install psycopg2
+---superusuario  >> luisochoa - 12345678
+4-realizar las migraciones >
+python manage.py makemigrations
+python manage.py migrate
+5-trabajar con foundation> inclue lo que son aspectos en css
+>libreria para manejar imagenes.
+pip install Pillow
